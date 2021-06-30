@@ -24,7 +24,7 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Button login2 = findViewById(R.id.signup);
 
-
+// Error here need to solve
         ///////////////SIGNUP////////
 //        login2.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -54,6 +54,10 @@ public class login extends AppCompatActivity {
             }
         });
     }
+
+    /* To Do Add a New Function mention TO DO in the start
+    *  Then Commit
+    * */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
