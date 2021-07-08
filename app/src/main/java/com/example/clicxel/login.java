@@ -17,23 +17,24 @@ import android.widget.ImageView;
 
 public class login extends AppCompatActivity {
      ImageView imageView;
-     Button button;
+     Button button, login2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button login2 = findViewById(R.id.signup);
+        //login2 = findViewById(R.id.signup);   This is your statement which refers (signup) in activity_mainpage.xml
+        // Fix It should have referred login1 button in activity_login.xml
+        login2 = findViewById(R.id.login1);
 
-// Error here need to solve
         ///////////////SIGNUP////////
-//        login2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplication(), filter.class);
-//                startActivity(intent);
-//                return;
-//            }
-//        });
+        login2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplication(), filter.class);
+                startActivity(intent);
+                return;
+            }
+        });
 
 ///////////////CAMERA////////////
         imageView = findViewById(R.id.image_view);
@@ -54,10 +55,6 @@ public class login extends AppCompatActivity {
             }
         });
     }
-
-    /* To Do Add a New Function mention TO DO in the start
-    *  Then Commit
-    * */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
