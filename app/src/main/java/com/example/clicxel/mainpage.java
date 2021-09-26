@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class mainpage extends AppCompatActivity {
 
     @Override
@@ -34,6 +36,14 @@ public class mainpage extends AppCompatActivity {
                 return;
             }
         });
-    }}
+    }
+    protected void onStart() {
+        super.onStart();
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), dashboard.class));
+            finish();
+        }
+    }
+}
 
 

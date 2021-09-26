@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406289020378",
+    "project_id": "mobileappclicxel",
+    "storage_bucket": "mobileappclicxel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406289020378:android:8f22743adccb62c69afce3",
+        "android_client_info": {
+          "package_name": "com.example.clicxel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406289020378-fvtgnvqvp6mhp450icnln94gp3s108sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjS1Q2Gsr-HC_Ql7S-ZOppw0FhMO9LOC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406289020378-fvtgnvqvp6mhp450icnln94gp3s108sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

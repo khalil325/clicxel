@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manageotp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="OTP Verification"
+        android:textColor="@color/black"
+        android:fontFamily="@font/tienne_bold"
+        android:layout_marginTop="85dp"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints"></TextView>
+
+
+    <TextView
+    android:id="@+id/lastname"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:text="Enter 6 Digits Code here."
+    android:layout_marginTop="180dp"
+    android:layout_marginRight="100dp"
+    android:fontFamily="@font/tienne"
+    android:gravity="center_horizontal"
+    android:textColor="@color/grey"
+    android:textSize="16dp"/>
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="370dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:hint="Enter OTP here"
+        android:fontFamily="@font/tienne"
+        android:textSize="18dp"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        app:layout_constraintStart_toEndOf="@+id/ccp"
+        android:layout_marginLeft="66dp" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="291dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/tienne"
+        android:text="Verify and Continue"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+</LinearLayout>
