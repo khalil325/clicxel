@@ -6,6 +6,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -15,45 +18,72 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Clicxel">
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+        <activity android:name=".FaceFilterActivity">
+
+        </activity>
         <activity
             android:name=".biometric"
-            android:exported="true" />
-        <activity
-            android:name=".dashboardgoogle"
-            android:exported="true" />
-        <activity
-            android:name=".google"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true" >
         </activity>
         <activity
+            android:name=".dashboardgoogle"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true" />
+        <activity
+            android:name=".google"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name=".editor"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true" />
         <activity
             android:name=".dashboard"
             android:exported="true">
 
+
         </activity>
         <activity
             android:name=".manageotp"
-            android:exported="true" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true" >
+           </activity>
         <activity
             android:name=".phoneNo"
-            android:exported="true" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".emailVerification"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true" />
-        <activity android:name=".filter" />
-        <activity android:name=".email" />
-        <activity android:name=".signup" />
-        <activity android:name=".login" >
+        <activity android:name=".filter"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".email"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".signup"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
-        <activity android:name=".mainpage" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".mainpage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity" />

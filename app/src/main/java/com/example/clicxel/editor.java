@@ -106,6 +106,7 @@ public class editor extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        //getSupportActionBar().hide();
         //Check Condition
         if (resultCode == RESULT_OK){
             //When result is ok

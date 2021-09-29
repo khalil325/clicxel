@@ -4,50 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dashboardgoogle">
+    tools:context=".dashboardgoogle"
+    android:background="@drawable/background_app2">
+
+    <TextView
+        android:layout_width="355dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/tienne_bold"
+        android:text="Login Details"
+        android:textColor="@color/green"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/pimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
 
     <ImageView
         android:id="@+id/pimage"
         android:layout_width="193dp"
         android:layout_height="143dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="172dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127"
         app:srcCompat="@drawable/ic_launcher_background"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/emailtext"
-        android:layout_width="186dp"
+        android:layout_width="361dp"
         android:layout_height="48dp"
+        android:fontFamily="@font/tienne"
         android:text="Email"
         android:textAlignment="center"
-        android:fontFamily="@font/tienne"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintVertical_bias="0.789"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/nametext"
         android:layout_width="361dp"
         android:layout_height="48dp"
+        android:fontFamily="@font/tienne"
         android:text="Name"
         android:textAlignment="center"
-        android:fontFamily="@font/tienne"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/emailtext"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pimage"/>
+        app:layout_constraintTop_toBottomOf="@+id/pimage"
+        app:layout_constraintVertical_bias="0.688" />
 
     <Button
         android:id="@+id/button"

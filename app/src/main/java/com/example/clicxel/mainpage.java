@@ -40,7 +40,7 @@ public class mainpage extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(), dashboard.class));
+            startActivity(new Intent(getApplicationContext(), biometric.class));
             finish();
         }
     }

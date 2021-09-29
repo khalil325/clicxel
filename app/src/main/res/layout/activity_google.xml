@@ -5,45 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".google"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_app2">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="100dp"
+        android:paddingTop="20dp"
         android:orientation="vertical"
         android:paddingRight="20dp"
         android:paddingLeft="20dp">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tienne_bold"
+            android:includeFontPadding="false"
+           android:layout_marginTop="60dp"
+            android:shadowColor="#0E0E0E"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="45sp" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/googleicon" />
+        android:layout_marginTop="40dp"
+        android:src="@drawable/googlelogo" />
+
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/tienne_bold"
-        android:includeFontPadding="false"
-        android:paddingTop="20sp"
-        android:shadowColor="#0E0E0E"
-        android:text="Sign In"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="45sp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:includeFontPadding="false"
         android:shadowColor="#0E0E0E"
         android:text="Sign-In with Google using Firebase!"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="14sp" />
+        android:textColor="@color/green"
+        android:textSize="16sp" />
 
 
     <Space
@@ -57,6 +59,7 @@
             android:id="@+id/sbtn"
             android:layout_width="336dp"
             android:layout_height="59dp"
+            android:layout_gravity="center"
             android:textAlignment="center">
 
         </com.google.android.gms.common.SignInButton>
@@ -74,9 +77,9 @@
         android:includeFontPadding="false"
         android:shadowColor="#0E0E0E"
         android:fontFamily="@font/tienne"
-        android:text="The Best Photo Partner"
+        android:text="All right reserved"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/green"
         android:textSize="14sp"
         tools:ignore="RtlCompat" />
 

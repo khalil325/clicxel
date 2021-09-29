@@ -7,8 +7,9 @@
     tools:context=".editor"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@color/white"
-    android:padding="16dp">
+    android:background="@drawable/background_app2"
+    android:padding="16dp"
+    >
 
 
     <ImageView

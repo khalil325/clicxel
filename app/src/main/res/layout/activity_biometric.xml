@@ -4,36 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".biometric">
+    tools:context=".biometric"
+    android:background="@drawable/background_app2">
 
     <TextView
 
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-        android:textSize="30dp"
-        android:text="Thumb Verification"
-        android:textColor="@color/black"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/tienne_bold"
-        android:layout_marginTop="95dp"
         android:gravity="center_horizontal"
+        android:text="Thumb Verification"
+        android:textColor="@color/green"
+        android:textSize="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"></TextView>
 
+    <ImageView
+        android:layout_width="171dp"
+        android:layout_height="236dp"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:src="@drawable/biometriclogo"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
         android:id="@+id/btnAuth"
         android:layout_width="237dp"
         android:layout_height="50dp"
-        android:text="AUTHENTICATE NOW"
         android:background="@drawable/button_shape3"
+        android:text="AUTHENTICATE NOW"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
 
     <TextView
         android:id="@+id/tvAuthStatus"
